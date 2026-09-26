@@ -9,12 +9,12 @@ Location and purpose
 With your permission, the app obtains your device location while you use it. Approximate or precise coordinates, depending on your Android permission choice, are sent over HTTPS to Open-Meteo for local weather and air quality. On Android, coordinates are also passed to the system Geocoder to obtain an area name. That service may communicate with its network provider under the provider&#39;s privacy terms. The app does not request background location or maintain a location history.
 
 Automatic loading
-When you reopen the app, it checks your existing Android permission and loads local weather. It may refresh when you return after ten minutes. You can also refresh manually. You can revoke permission or change location accuracy in Android Settings at any time. Without location permission, this version cannot load local weather.
+When you reopen the app, it first shows saved weather, clearly marked as saved, and checks your existing Android permission before refreshing local weather. To reduce delays, it may use a device location obtained within the previous 15 minutes; manual location refresh requests a fresh position. It may refresh when you return after ten minutes. You can also refresh manually. You can revoke permission or change location accuracy in Android Settings at any time. Without location permission, this version cannot load local weather.
 
 Providers and retention
 Open-Meteo receives the requested coordinates and network information such as your IP address. Its free-API policy states that troubleshooting logs may contain coordinates and are deleted after 90 days. These provider logs are not controlled by the app developer. See https://open-meteo.com/en/terms and contact info@open-meteo.com for provider privacy requests. Android&#39;s system geocoding provider manages any service data under its own terms; its availability and provider can vary by device.
 
-The app keeps fetched weather and the area name in working memory. It does not write a location database or account profile to device storage or a developer server. Android itself retains your permission choice. The app does not sell your information or use it for advertising.
+On Android, the app saves the latest weather report, area name, air-quality reading, temperature-unit preference, and update timestamp in private app storage so weather appears quickly and can be displayed in a home-screen widget. The app does not save a history of your movements or raw GPS coordinates in this cache. Saved weather remains until replaced by a newer report, cleared using Clear saved weather in the app menu or Android app-storage settings, or removed by uninstalling the app. The widget displays the last saved report and its timestamp; tap it to open the app and refresh. It does not obtain location or download weather in the background. Android itself retains your permission choice and may maintain a last-known device location. The app does not sell your information or use it for advertising.
 
 Support
 If you email supportapp247@gmail.com, your email address and the information you choose to send are used to answer your request. Do not send passwords or unnecessary sensitive information. Support correspondence is retained while handling your request and until you request deletion, unless retention is legally required. Email is handled by the email service provider.
@@ -30,6 +30,5 @@ The app is a general weather tool and is not designed specifically for children.
 
 Changes
 Updates to this policy will be made available in the app and on its published privacy-policy page, with an updated effective date.
+
 </main><p>Contact: <a href="mailto:supportapp247@gmail.com">supportapp247@gmail.com</a></p></html>
-
-
